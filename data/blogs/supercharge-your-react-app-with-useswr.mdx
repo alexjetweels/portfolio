@@ -1,11 +1,11 @@
 ---
-title: "Supercharge your React app with useSWR"
-date: "March 29, 2023"
-subtitle: "Saves You the Stress of Writing Your Own Logic"
-cover_image: "/images/supercharge-your-react-app-with-useswr.png"
-href: "/blogs/supercharge-your-react-app-with-useswr"
-tags: "JavaScript, Open Source, API, Error, Client, Request, Response, React, Hooks, Next.js, Frontend"
-url: "https://ayushsoni1010.hashnode.dev/supercharge-your-react-app-with-useswr"
+title: 'Supercharge your React app with useSWR'
+date: 'March 29, 2023'
+subtitle: 'Saves You the Stress of Writing Your Own Logic'
+cover_image: '/images/supercharge-your-react-app-with-useswr.png'
+href: '/blogs/supercharge-your-react-app-with-useswr'
+tags: 'JavaScript, Open Source, API, Error, Client, Request, Response, React, Hooks, Next.js, Frontend'
+url: 'https://ayushsoni1010.hashnode.dev/supercharge-your-react-app-with-useswr'
 ---
 
 ### 🚩Introduction
@@ -51,10 +51,10 @@ Once installed, you can import the **useSWR** hook and use it in your components
 Let’s understand it through an example:
 
 ```jsx
-import useSWR from "swr";
+import useSWR from 'swr';
 
 function MyComponent() {
-  const { data, error } = useSWR("/api/data");
+  const { data, error } = useSWR('/api/data');
 
   if (error) return <div>Error fetching data</div>;
   if (!data) return <div>Loading data...</div>;
@@ -114,14 +114,14 @@ One common approach to fetching and caching remote data in React and Next is to 
 Let’s understand it through an example:
 
 ```jsx
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 function MyComponent() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/api/data")
+    fetch('/api/data')
       .then((response) => response.json())
       .then(setData)
       .catch(setError);
@@ -144,10 +144,10 @@ While this approach works, it has some limitations. For example, it requires mor
 Now let’s compare this with **useSWR**:
 
 ```jsx
-import useSWR from "swr";
+import useSWR from 'swr';
 
 function MyComponent() {
-  const { data, error } = useSWR("/api/data");
+  const { data, error } = useSWR('/api/data');
 
   if (error) return <div>Error fetching data</div>;
   if (!data) return <div>Loading data...</div>;
@@ -170,13 +170,13 @@ To compare the performance of UseSWR with `useEffect` and `useState`, we'll us
 Here's the code for fetching and displaying todo items using `useEffect` and `useState`:
 
 ```jsx
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
+    fetch('https://jsonplaceholder.typicode.com/todos')
       .then((response) => response.json())
       .then((data) => setTodos(data.slice(0, 100)))
       .catch((error) => console.error(error));
@@ -186,7 +186,7 @@ function TodoList() {
     <ul>
       {todos.map((todo) => (
         <li key={todo.id}>
-          <input type="checkbox" checked={todo.completed} />
+          <input type='checkbox' checked={todo.completed} />
           <span>{todo.title}</span>
         </li>
       ))}
@@ -200,10 +200,10 @@ Using this approach, it took an average of 150-200 milliseconds to fetch and dis
 Now let's compare this with UseSWR:
 
 ```jsx
-import useSWR from "swr";
+import useSWR from 'swr';
 
 function TodoList() {
-  const { data, error } = useSWR("https://jsonplaceholder.typicode.com/todos");
+  const { data, error } = useSWR('https://jsonplaceholder.typicode.com/todos');
 
   if (error) return <div>Error fetching data</div>;
   if (!data) return <div>Loading data...</div>;
@@ -214,7 +214,7 @@ function TodoList() {
     <ul>
       {todos.map((todo) => (
         <li key={todo.id}>
-          <input type="checkbox" checked={todo.completed} />
+          <input type='checkbox' checked={todo.completed} />
           <span>{todo.title}</span>
         </li>
       ))}
@@ -246,11 +246,3 @@ The SWR hook saves us the stress of writing our own logic for data fetching, mak
 &nbsp;
 
 That's all for today.
-
-If you enjoyed this content, please share your feedback and consider retweeting the first tweet😀.
-
-New to my profile? 🎉
-
-Hey! I am Ayush, a full-stack developer from India. I tweet and document my coding journey🌸.
-
-Follow [@ayushsoni1010](https://twitter.com/ayushsoni1010) for more content like this🔥😉.

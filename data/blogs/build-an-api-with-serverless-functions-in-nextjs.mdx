@@ -1,11 +1,11 @@
 ---
-title: "Build an API with Serverless Functions in Next.js"
-date: "April 01, 2023"
-subtitle: "Creating Efficient and Scalable Serverless APIs"
-cover_image: "/images/build-an-api-with-serverless-functions-in-nextjs.png"
-href: "/blogs/build-an-api-with-serverless-functions-in-nextjs"
-tags: "Open Source, JavaScript, Node.js, API, Network, Routing, Request, Response, Server, Client, React, Next.js, Hooks, Serverless Functions, Vercel"
-url: "https://ayushsoni1010.hashnode.dev/build-an-api-with-serverless-functions-in-nextjs"
+title: 'Build an API with Serverless Functions in Next.js'
+date: 'April 01, 2023'
+subtitle: 'Creating Efficient and Scalable Serverless APIs'
+cover_image: '/images/build-an-api-with-serverless-functions-in-nextjs.png'
+href: '/blogs/build-an-api-with-serverless-functions-in-nextjs'
+tags: 'Open Source, JavaScript, Node.js, API, Network, Routing, Request, Response, Server, Client, React, Next.js, Hooks, Serverless Functions, Vercel'
+url: 'https://ayushsoni1010.hashnode.dev/build-an-api-with-serverless-functions-in-nextjs'
 ---
 
 Next.js is a React framework that provides two ways of rendering React components into HTML pages - **server-side rendering(SSR)** and **static site generation(SSG).**
@@ -100,10 +100,10 @@ Similarly, the matched route `/users/abcdef?foo=bar` of a dynamic route, `pages/
 In your application, create a `user` folder, and inside it create a component named `[username].js`. Add the following code:
 
 ```jsx
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
 const User = () => {
   const router = useRouter();
-  const username = router.query["username"];
+  const username = router.query['username'];
   return (
     <div>
       <h1>Hello! Welcome {username} </h1>
@@ -154,28 +154,28 @@ To build an API with the API route, create a folder called `data` in the root di
 [
   {
     id: 1,
-    title: "I am title 1",
-    body: "Hello from post 1",
+    title: 'I am title 1',
+    body: 'Hello from post 1',
   },
   {
     id: 2,
-    title: "I am title 2",
-    body: "Hello from post 2",
+    title: 'I am title 2',
+    body: 'Hello from post 2',
   },
   {
     id: 3,
-    title: "I am title 3",
-    body: "Hello from post 3",
+    title: 'I am title 3',
+    body: 'Hello from post 3',
   },
   {
     id: 4,
-    title: "I am title 4",
-    body: "Hello from post 4",
+    title: 'I am title 4',
+    body: 'Hello from post 4',
   },
   {
     id: 5,
-    title: "I am title 5",
-    body: "Hello from post 5",
+    title: 'I am title 5',
+    body: 'Hello from post 5',
   },
 ];
 ```
@@ -184,7 +184,7 @@ Now, in the `pages/api` folder, create a new file called posts.js with the follo
 
 ```jsx
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import posts from "../../data/posts.json";
+import posts from '../../data/posts.json';
 export default function handler(req, res) {
   res.status(200).json(posts);
 }
@@ -199,16 +199,16 @@ You can use the `request.method` object as seen below to handle other HTTP reque
 ```jsx
 export default (req, res) => {
   switch (req.method) {
-    case "GET":
+    case 'GET':
       //...
       break;
-    case "POST":
+    case 'POST':
       //...
       break;
-    case "PUT":
+    case 'PUT':
       //...
       break;
-    case "DELETE":
+    case 'DELETE':
       //...
       break;
     default: // Method not allowed
@@ -226,7 +226,7 @@ To elaborate more on this, create a `posts` folder inside the `pages/api` folder
 
 ```jsx
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import posts from "../../../data/posts.json";
+import posts from '../../../data/posts.json';
 export default function handler(req, res) {
   const { postid } = req.query;
   const post = posts.find((post) => post.id === parseInt(postid));
@@ -269,11 +269,3 @@ I do hope that at the end of this article, you can build APIs using Next.js APIs
 &nbsp;
 
 That's all for today.
-
-If you enjoyed this content, please share your feedback and consider retweeting the first tweet😀.
-
-New to my profile? 🎉
-
-Hey! I am Ayush, a full-stack developer from India. I tweet and document my coding journey🌸.
-
-Follow [@ayushsoni1010](https://twitter.com/ayushsoni1010) for more content like this🔥😉.

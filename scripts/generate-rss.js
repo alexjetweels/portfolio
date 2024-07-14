@@ -1,26 +1,26 @@
-const { promises: fs } = require("fs");
-const path = require("path");
-const RSS = require("rss");
-const matter = require("gray-matter");
+const { promises: fs } = require('fs');
+const path = require('path');
+const RSS = require('rss');
+const matter = require('gray-matter');
 
 exports.generate = async () => {
   const feed = new RSS({
-    title: "Ayush Soni",
-    description: "Hey! I am Ayush, a full-stack developer from India",
-    feed_url: "https://ayushsoni1010.com/feed.xml",
-    site_url: "https://ayushsoni1010.com",
-    managingEditor: "Ayush Soni",
-    webMaster: "Ayush Soni",
-    language: "en",
-    copyright: `Ayush Soni | ${new Date().getFullYear()}`,
+    title: 'Alex Dinh',
+    description: 'Hey! I am Alex, a full-stack developer from Vietnam.',
+    feed_url: 'https://portfolio.haidinh.link/feed.xml',
+    site_url: 'https://portfolio.haidinh.link',
+    managingEditor: 'Alex Dinh',
+    webMaster: 'Alex Dinh',
+    language: 'en',
+    copyright: `Alex Dinh', | ${new Date().getFullYear()}`,
   });
 
-  const posts = await fs.readdir(path.join(__dirname, "..", "data", "blogs"));
+  const posts = await fs.readdir(path.join(__dirname, '..', 'data', 'blogs'));
 
   await Promise.all(
     posts.map(async (filename) => {
       const blogsData = await fs.readFile(
-        path.join(path.join(__dirname, "..", "data", "blogs", filename))
+        path.join(path.join(__dirname, '..', 'data', 'blogs', filename))
       );
 
       const frontmatter = matter(blogsData);
@@ -29,12 +29,12 @@ exports.generate = async () => {
         title: frontmatter.data.title,
         description: frontmatter.data.subtitle,
         url: frontmatter.data.url,
-        author: "Ayush Soni",
+        author: 'Alex Dinh',
         date: frontmatter.data.date,
-        categories: frontmatter.data.tags.split(", "),
+        categories: frontmatter.data.tags.split(', '),
       });
     })
   );
 
-  await fs.writeFile("./public/rss.xml", feed.xml({ indent: true }));
+  await fs.writeFile('./public/rss.xml', feed.xml({ indent: true }));
 };
