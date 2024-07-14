@@ -52,7 +52,7 @@ const About = () => {
             >
               <GridItem colSpan={2}>
                 <Image
-                  src='/profile.jpg'
+                  src='/profile.jpeg'
                   alt='Hero'
                   w='320px'
                   borderRadius='10px'
@@ -75,13 +75,13 @@ const About = () => {
                   </span>{' '}
                   , a passionate full-stack developer and devrel engineer with a
                   love for open-source and UI designing. I specialize in
-                  building robust and scalable SaaS products, microservices, and
-                  design systems. With a strong grasp of frontend and backend
+                  building robust and scalable SaaS products, and design
+                  systems. With a strong grasp of frontend and backend
                   architecture, I create intuitive designs for engaging user
                   experiences.
                 </Text>
                 <Text mt='5'>
-                  🚀 I have extensive experience in {''}
+                  🚀 I have more than 5 years experience in {''}
                   <span
                     style={{
                       color: 'var(--chakra-colors-teal-500)',
@@ -91,10 +91,6 @@ const About = () => {
                     Javascript and Typescript
                   </span>
                   , using them professionally and for personal projects.
-                  I&apos;m involved in hackathons, community building, and
-                  open-source contributions as both a participant and mentor.
-                  Additionally, I also lead community initiatives, offer
-                  software development sessions, and provide team leadership.
                 </Text>
                 <HStack
                   mt={{ base: 8, lg: 8, md: 8, sm: 10, xs: 10 }}
