@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: '',
+  siteUrl: 'https://portfolio.haidinh.link',
   generateRobotsTxt: true,
 };
