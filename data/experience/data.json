@@ -1,45 +1,27 @@
 [
   {
-    "role": "Frontend Engineer",
-    "company": "Go2work",
-    "company_url": "https://go2work.com",
-    "start_date": "November 2023",
-    "end_date": "",
-    "duration": "",
-    "location": "Houston, Texas, United States",
+    "role": "Software Engineer",
+    "company": "Jetweels",
+    "company_url": "https://www.jetweels.com/",
+    "start_date": "Apr 2023",
+    "end_date": "Jul 2024",
+    "duration": "1 year 3 months",
+    "location": "Remote",
     "work_type": "Remote",
     "role_description": [
-      "Led library transition, built dashboard from scratch with wrapper components for hiring platform using Shadcn UI.",
-      "Optimized app performance, improved UI, and implemented chaos engineering for enhanced user experience.",
-      "Integrated WebSocket chat, push notifications, Strapi and managed authentication flow using Firebase in frontend."
+      "Worked on the frontend of the company's website, built new features, and improved the user experience.",
+      "Implemented a new design system for the website, improved the performance, and optimized the codebase.",
+      "Communicated with the designer to implement new designs and features, and worked with the Technical Consultant to integrate new APIs.",
+      "Join meetings with the team to discuss new features, improvements, and bugs, and worked with the QA team to fix bugs and improve the quality of the website."
     ],
     "tech_stack": [
-      "TypeScript",
-      "Firebase",
-      "MongoDb",
-      "MongoDb",
-      "Nodejs",
-      "WebSockets",
-      "Shadcn UI",
-      "Materia UI",
-      "Tailwind"
+      "Reactjs",
+      "JavaScript",
+      "Ant design",
+      "Tailwindcss",
+      "Kendo UI",
+      "Soap API"
     ]
-  },
-  {
-    "role": "Developer Relations Engineer",
-    "company": "FifthTry",
-    "company_url": "https://fifthtry.com",
-    "start_date": "April 2023",
-    "end_date": "September 2023",
-    "duration": "6 months",
-    "location": "Bangalore",
-    "work_type": "Remote",
-    "role_description": [
-      "Spearheaded strategic enhancements, built numerous sample apps with fastn, and handled other engineering tasks.",
-      "Led documentation site development, conducted developer training, enhanced the fastn framework written in Rust.",
-      "Curated nationwide events, managed marketing efforts, fostered community growth, and handled client relations."
-    ],
-    "tech_stack": ["Rust", "JavaScript"]
   },
   {
     "role": "Software Engineer",
