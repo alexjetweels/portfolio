@@ -20,7 +20,7 @@ import { IoIosRocket } from 'react-icons/io';
 const Home = () => {
   return (
     <React.Fragment>
-      {/* <BaseLayout mt='10' id='stack'>
+      <BaseLayout mt='10' id='stack'>
         <Heading
           fontSize={{
             base: '5xl',
@@ -41,9 +41,7 @@ const Home = () => {
           mx={{ lg: 60, md: 60, sm: 0, xs: 0 }}
         >
           From designing the interface to implementing your fully featured
-          application - I can provide the full product design process from an
-          idea to a finished hiqh quality app, polished with fantastic design
-          and running on state of the art software.
+          application.
         </Text>
         <Box align='center' my={{ base: 20, lg: 20, md: 20, sm: 14, xs: 14 }}>
           <Grid
@@ -91,7 +89,7 @@ const Home = () => {
             )}
           </Grid>
         </Box>
-      </BaseLayout> */}
+      </BaseLayout>
       <Skills />
       <BaseLayout mt='24' id='product'>
         <Heading

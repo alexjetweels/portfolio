@@ -42,7 +42,7 @@ const Hero = () => {
               fontSize={{ base: 'sm', sm: 'sm', xs: 'xs' }}
               borderWidth='2px'
             >
-              Hello, I&apos;m a Front end Developer based in Vietnam
+              Hello, I&apos;m a Fullstack Developer based in Vietnam
             </Button>
           </Link>
         </VStack>
@@ -72,7 +72,7 @@ const Hero = () => {
                 </Text>
               </Stack>
               <Stack display='flex' direction='row'>
-                <Text colorScheme='black'>frontend</Text>
+                <Text colorScheme='black'>Fullstack</Text>
                 <Text
                   bgGradient='linear(to-tr, teal.500, green.400)'
                   bgClip='text'
