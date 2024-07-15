@@ -20,7 +20,7 @@ import { IoIosRocket } from 'react-icons/io';
 const Home = () => {
   return (
     <React.Fragment>
-      <BaseLayout mt='10' id='stack'>
+      {/* <BaseLayout mt='10' id='stack'>
         <Heading
           fontSize={{
             base: '5xl',
@@ -91,7 +91,7 @@ const Home = () => {
             )}
           </Grid>
         </Box>
-      </BaseLayout>
+      </BaseLayout> */}
       <Skills />
       <BaseLayout mt='24' id='product'>
         <Heading
