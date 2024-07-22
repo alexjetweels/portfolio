@@ -4,9 +4,9 @@ import Head from 'next/head';
 const Seo = ({
   title = 'Alex',
   description = 'Hey! I am Alex, a full-stack developer from Vietnam.',
-  OGImage = 'https://ayushsoni1010.com/profile.jpg',
+  OGImage = 'https://portfolio.haidinh.link/profile.jpeg',
   OGType = 'website',
-  canonicalUrl = 'https://ayushsoni1010.com/',
+  canonicalUrl = 'https://portfolio.haidinh.link/',
   publishedDate = new Date(),
   children,
 }) => {
