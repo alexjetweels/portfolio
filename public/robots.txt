@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ayushsoni1010.com
+Host: https://portfolio.haidinh.link
 
 # Sitemaps
-Sitemap: https://ayushsoni1010.com/sitemap.xml
+Sitemap: https://portfolio.haidinh.link/sitemap.xml
