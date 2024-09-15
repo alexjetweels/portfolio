@@ -1,11 +1,37 @@
 [
   {
     "role": "Software Engineer",
+    "company": "FPT software",
+    "company_url": "https://fptsoftware.com/",
+    "start_date": "Jun 2023",
+    "end_date": "Now",
+    "location": "Hanoi, Vietnam",
+    "work_type": "Onsite",
+    "role_description": [
+      "Worked on the software engineer of the company's website, built new features, and improved the user experience.",
+      "Implemented a new design system for the website, improved the performance, and optimized the codebase.",
+      "Communicated with the designer to implement new designs and features, and worked with the Technical Consultant to integrate new APIs.",
+      "Join meetings with the team to discuss new features, improvements, and bugs, and worked with the QA team to fix bugs and improve the quality of the website."
+    ],
+    "tech_stack": [
+      "Reactjs",
+      "JavaScript",
+      "Angular",
+      "Vue",
+      "Ant design",
+      "Tailwindcss",
+      "Kendo UI",
+      "Soap API",
+      "React Native",
+      "NodeJS"
+    ]
+  },
+  {
+    "role": "Software Engineer",
     "company": "Jetweels",
     "company_url": "https://www.jetweels.com/",
     "start_date": "Apr 2023",
-    "end_date": "Jul 2024",
-    "duration": "1 year 3 months",
+    "end_date": "Now",
     "location": "Remote",
     "work_type": "Remote",
     "role_description": [
@@ -20,7 +46,8 @@
       "Ant design",
       "Tailwindcss",
       "Kendo UI",
-      "Soap API"
+      "Soap API",
+      "React Native"
     ]
   },
   {
